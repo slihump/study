@@ -10,11 +10,11 @@ void swap(int *x, int *y) {
 
 int main() {
 	int x = 10, y = 20;
-	printf("swap함수를 호출하지 않았을 때 main함수에서의 x=%d, y=%d\n", x, y);
+	printf("Before swap: x=%d, y=%d\n", x, y);
 
 	swap(&x, &y);
 
-	printf("swap함수를 호출하고 난 뒤의 main함수에서의 x=%d, y=%d\n", x, y);
+	printf("After swap: x=%d, y=%d\n", x, y);
 
 	return 0;
 }

@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 enum month {
@@ -10,21 +9,21 @@ void print_season(enum month month) {
 	case Mar:
 	case Apr:
 	case May:
-		printf("봄"); break;
+		printf("the spring"); break;
 	case Jun:
 	case Jul:
 	case Aug:
-		printf("여름"); break;
+		printf("the summer"); break;
 	case Sep:
 	case Oct:
 	case Nov:
-		printf("가을"); break;
+		printf("the fall"); break;
 	case Dec:
 	case Jan:
 	case Feb:
-		printf("겨울"); break;
+		printf("the winter"); break;
 	default:
-		printf("지구에 존재하지 않는 계절"); break;
+		printf("a non-Earth season."); break;
 	}
 }
 
@@ -32,7 +31,7 @@ enum month select_month(void) {
 	int tmp;
 
 	do {
-		printf("몇 월입니까? :");
+		printf("How month? :");
 		scanf("%d", &tmp);
 	} while (tmp < Jan && tmp > Dec);
 	return tmp;
@@ -41,12 +40,11 @@ enum month select_month(void) {
 int main(void) {
 	enum month your_month;
 
-	printf("태어난 월을 입력해주세요. ");
+	printf("Enter the month of birth.");
 	your_month = select_month();
 
-	printf("당신은 ");
+	printf("You were born in ");
 	print_season(your_month);
-	printf("에 태어났군요.\n");
 
 	return 0;
 }

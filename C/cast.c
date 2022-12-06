@@ -1,14 +1,13 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main() {
-	double a, b;
+	int a, b;
 
-	puts("2개의 정수를 입력하세요.");
-	printf("정수 a : "); scanf("%d", &a);
-	printf("정수 b : "); scanf("%d", &b);
+	puts("Enter 2 integers.");
+	printf("a : "); scanf("%d", &a);
+	printf("b : "); scanf("%d", &b);
 
-	printf("a 값은 b의 %f%%입니다.\n", (double)a / b * 100.0);
+	printf("a is %.2lf of b.\n", (double)a / b * 100.0);
 
 	return 0;
 }

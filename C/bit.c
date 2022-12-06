@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 
@@ -39,13 +38,13 @@ unsigned inverse(unsigned x, int pos) {
 }
 
 int main(void) {
-	unsigned x, n;
+	unsigned x, pos;
 
-	printf("부호 없는 정수 x를 n비트 조작합니다.\n");
+	printf("Manipulate unsigned integers x by n bits.\n");
 	printf("x : "); scanf("%u", &x);
-	printf("y : "); scanf("%u", &n);
+	printf("pos : "); scanf("%u", &pos);
 
-	print("\nx					= "); print_bits(x);
+	printf("\nx					= "); print_bits(x);
 	printf("\nset(x, pos)		= "); print_bits(set(x, pos));
 	printf("\nreset(x, pos)		= "); print_bits(reset(x, pos));
 	printf("\ninverse(x, pos)	= "); print_bits(inverse(x, pos));

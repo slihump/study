@@ -1,10 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int check_prime(int n);
 
 int main() {
 	int n, flag = 0;
-	printf("양의 정수를 입력: ");
+	printf("Outputs the sum of two integers from which the entered values are obtained.: ");
 	scanf("%d", &n);
 
 	for (int i = 2; i < n; i++) {

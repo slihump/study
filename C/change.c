@@ -5,15 +5,15 @@ int main() {
 	int money, price;
 	int change = 0;
 
-	printf("≈ı¿‘«— µ∑ : ");
+	printf("Enter your money : ");
 	scanf("%d", &money);
 
-	printf("∞°∞› : ");
+	printf("Enter the price : ");
 	scanf("%d", &price);
 
 	change = money - price;
 
-	printf("∞≈Ω∫∏ßµ∑ : %d", change);
+	printf("Change : %d", change);
 
 	return 0;
 }

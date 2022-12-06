@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define NUM 10
 
@@ -7,7 +6,7 @@ int main() {
 	char s[NUM][128];
 
 	no = NUM;
-	printf("%d개의 문자열을 입력하라(\"$$$$$\"로 중단).\n", NUM);
+	printf("Please enter a string of up to %d digits. (Shut down when you want to \"$$$$$\").\n", NUM);
 	for (i = 0; i < NUM; i++) {
 		printf("s[%d] : ", i);
 		scanf("%s", s[i]);
